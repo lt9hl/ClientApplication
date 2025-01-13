@@ -43,9 +43,21 @@ namespace UserApp
                 us = db.Users.Where(i => (i.Login == login || i.Email == login ) && i.Password == pass).FirstOrDefault();
             }
             if(us != null)
+            {
                 MessageBox.Show("Вход выполнен");
+                UserPageWindow userWin = new UserPageWindow();
+                userWin.Show();
+                this.Hide();
+            }
             else
                 MessageBox.Show("Пользователь не найден");
+        }
+
+        private void RegPageButton(object sender, RoutedEventArgs e)
+        {
+            MainWindow regWin = new MainWindow();
+            regWin.Show();
+            this.Close();
         }
     }
 }

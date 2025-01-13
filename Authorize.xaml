@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:UserApp"
         mc:Ignorable="d"
         Title="Авторизация" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Background="Snow">
+    <Grid Background="Lavender">
         <Border MinWidth="400" MaxWidth="550" Margin="15" Background="white" VerticalAlignment="Center" Padding="40" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="20" Color="LightGray" ShadowDepth="0"/>
@@ -16,7 +16,7 @@
                 <TextBlock Text="Авторизация" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
 
                 <Grid Margin="0 0 0 10">
-                    <Button HorizontalAlignment="Right" Content="Регистрация" />
+                    <Button HorizontalAlignment="Right" Content="Регистрация" Click="RegPageButton" />
                     <Button HorizontalAlignment="Left" Content="Вход" Style="{StaticResource MaterialDesignFlatButton}"/>
 
                 </Grid>

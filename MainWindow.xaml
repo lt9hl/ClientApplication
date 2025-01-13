@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:UserApp"
         mc:Ignorable="d"
         Title="Регистрация" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="Snow">
+    <Grid Background="Lavender">
         <Border MinWidth="400" MaxWidth="550" Margin="15" Background="white" VerticalAlignment="Center" Padding="40" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="20" Color="LightGray" ShadowDepth="0"/>
@@ -16,8 +16,8 @@
                 <TextBlock Text="Добро пожаловать" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
                
                 <Grid Margin="0 0 0 10">
-                    <Button HorizontalAlignment="Left" Content="Вход" />
-                    <Button HorizontalAlignment="Right" Content="Регистрация" Click="ButtonClickAuth" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button HorizontalAlignment="Right" Content="Регистрация" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button HorizontalAlignment="Left" Content="Вход" Click="ButtonClickAuth" />
                 </Grid>
                 <TextBox x:Name="TextboxLogin" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <PasswordBox x:Name="PasswordBox1" materialDesign:HintAssist.Hint="Пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
