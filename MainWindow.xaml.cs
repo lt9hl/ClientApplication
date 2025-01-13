@@ -88,7 +88,7 @@ namespace UserApp
             Authorize AuthWin = new Authorize();
             AuthWin.Show();
             this.Close();
-            this.Close();
+
         }
     }
 }

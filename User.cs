@@ -34,5 +34,9 @@ namespace UserApp
             passworsd = Pass;
             this.email = email;
         }
+        //public override string ToString()
+        //{
+        //    return String.Format("Пользователь: " + login + "  Почта: " + email );
+        //}
     }
 }

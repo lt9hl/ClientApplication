@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:UserApp"
         mc:Ignorable="d"
-        Title="Авторизация" Height="350" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Авторизация" Height="350" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Background="Lavender">
         <Border MinWidth="400" MaxWidth="550" Margin="15" Background="white" VerticalAlignment="Center" Padding="40" CornerRadius="20">
             <Border.Effect>
@@ -14,7 +14,18 @@
             </Border.Effect>
             <StackPanel>
                 <TextBlock Text="Кабинет пользователя" FontSize="25" FontWeight="Bold" Margin="0 0 0 20" />
-                <ListView x:Name="ListUsers" Margin="10" />
+                <ListView x:Name="ListUsers" Margin="10">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Login}" FontWeight="Bold" />
+                                <TextBlock Text=" ,"/>
+                                <TextBlock Text="{Binding Email}"/>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
             </StackPanel>
         </Border>
     </Grid>
